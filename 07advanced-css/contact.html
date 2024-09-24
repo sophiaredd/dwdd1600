@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Wedding Guide: Home</title>
+        <link rel="stylesheet" href="weddingguide.css">
+        <meta name="description" content="Tips and tricks to planning your wedding">
+        <meta name="author" content="Sophia Redd">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/ykw8wqm.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="70" height="80">
+            <div>
+                <h1>The Wedding Guide</h1>
+                <p>Stress Free Wedding Tips for Your Perfect Day</p>
+            </div>
+        </header>
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a href="inspo.html">Inspo</a></li>
+                <li class="active"><a href="contact.html">Meet with Us</a></li>
+            </ul>
+        
+        </nav>
+        <!--Start of the page content-->
+        <main>
+        <h1>Meet with Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+          
+         <fieldset>
+         <legend>Client Information</legend>
+         <label>First Name*<input type="text" name="fname" required></label>   
+         <label>Last Name*<input type="text" name="lname" required></label>   
+         <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-4321"></label>
+         <label>Email*<input type="email" name="email" required></label> 
+         </fieldset>
+          
+         <fieldset>
+         <legend>Contact Method</legend>
+            <label><input type="radio" name="method" value="Text">Text message</label> 
+            <label><input type="radio" name="method" value="Phone Call">Phone Call</label>
+            <label><input type="radio" name="method" value="Email">Email</label>
+            </fieldset>
+            
+      
+          <fieldset>   
+          <legend>Meeting Preference</legend>
+              <p>Once we have emailed/texted you back and we have figured out a day that works best, how would you like to have our consultation?</p>
+              <select name="preference">
+              <option value="none">Please Select</option>
+              <option value="in person">In Person</option>
+              <option value="zoom">Zoom Meeting</option>
+              <option value="google">Google Meet</option>
+              <option value="teams">Microsoft Teams</option>
+              </select>
+         </fieldset>
+            
+         <fieldset>
+            <legend>What's <em>Your</em> Style?</legend>
+             <p>Choose anything that you are interested in exploring! We will go more into detail at our consultation meeting. This is just so we have a general idea of what you are looking for!</p>
+            <label><input type="checkbox" name="cottage-core" value="chosen"> Cottage-Core/Garden</label>
+            <label><input type="checkbox" name="classy" value="chosen"> Classy/Elegant</label>
+            <label><input type="checkbox" name="fairytale" value="chosen"> Fairytale/Romantic</label>
+            <label><input type="checkbox" name="Rustic" value="chosen"> Rustic/Country</label>
+         </fieldset>
+            
+            <label>Comments
+            <textarea name="comments">If there's anything else you want us to know about your style or if you already have a color scheme, etc. let us know here!</textarea>
+            </label>
+            
+            
+            
+            
+            
+            
+            
+            
+        <input type="submit" value="Send Meeting Request"> 
+        </form>
+       
+            
+        </main>
+        <!--Start of the footer--> 
+        <footer>
+        <p>&copy; 2024 &bull; Sophia Redd &bull; <a href="mailto:theweddingguide@gmail.com">Email Us</a></p>
+        </footer>
+    
+    </body>
+</html>

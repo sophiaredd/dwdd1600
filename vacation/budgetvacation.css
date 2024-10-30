@@ -1,0 +1,309 @@
+body {
+    
+    font-family: "nave", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+/*Header Stuff Here*/
+header {
+    background-color: #faf8f4;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+   margin: 0;
+    color: #03617b;
+}
+
+header p {
+   margin: 0;
+   color: #03617b;
+   letter-spacing: 1.5px;
+}
+
+/*small screens*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0; 
+        padding: 0 2vw;
+        list-style-type: none; 
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #7da3ad;;
+        background-color: #03617b;
+        color: #faf8f4;
+        border-radius: 30px;
+    }
+    
+    nav .active a {
+        background-color: #7da3ad;
+        color: #faf8f4;
+        background-image: linear-gradient(#7da3ad, #03617b);
+    }
+    
+    
+} /*end of the media query*/
+
+
+
+
+
+/*Big screens*/
+@media only screen and (min-width: 601px) {
+    nav {
+    background-color: #03617b;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #faf8f4;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+    
+}
+
+nav li.active a {
+    background-color: #7da3ad;
+    color: #faf8f4;
+}
+nav a:hover {
+    color: #7da3ad;
+}
+    
+} /*end of the media query*/
+
+
+
+
+/*main stuff*/
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #f88173;
+    margin-bottom: .2rem;
+}
+
+main h2 {
+    color: #d39e35;
+    margin-bottom: .3rem; /**play around with this**/
+    
+}
+
+main h3 {
+    color:#03617b; /*might change this color*/
+    margin: 2rem 0; /*maybe play around with spacing*/
+}
+
+
+main p {
+    margin: 0 0 1rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+   
+}
+
+main address {
+    background-color: #7da3ad;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #03617b;
+    border-radius: 5px;
+    color: #faf8f4;
+    font-weight: 300;
+}
+
+main a {
+    color: #03617b;
+}
+
+main a:hover{
+    color:#f88173;
+}
+
+main address a:hover {
+    color:#faf8f4; 
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+    
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #03617b;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+div.gallery figure {
+    margin: .5rem 4% 2rem 0;
+    box-shadow: 1px 2px 10px black;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #03617b;
+    font-weight: 700;
+}
+
+figure.packages {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.packages img {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 10px black;
+    
+}
+
+figure.packages figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #d39e35;
+    margin-top: .4rem;
+    
+}
+
+.myForm fieldset {
+    border: 1px solid #d39e35;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color:#d39e35;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm p {
+    margin-top: .3rem;
+    font-size: .8rem;
+    color: #d39e35;
+}
+
+.myForm select {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "nave", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.myForm textarea {
+    height: 75px; 
+    font-size: .8rem;
+}
+
+.myForm :required {
+    background-color: rgba(248,129,115,0.1)
+}
+
+.myForm [type=submit] {
+    background-color: #7da3ad;
+    border: none;
+    padding: .8rem .8rem;
+    border-radius: 10px;
+    color: #faf8f4;
+    font-family: "nave", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 1rem 0 0 1vw;
+}
+
+fieldset.packages {
+    border: 3px solid #d39e35;
+    border-radius: 8px;
+    
+}
+
+legend.packages {
+    text-align: center;
+}
+
+
+
+figure.review img{
+    box-shadow: 1px 2px 10px black;
+   
+}
+
+figure.review figcaption {
+    margin-top: .3rem;
+    font-weight: 700;
+    font-size: .8rem;
+    color: #d39e35;
+}
+
+/*footer stuff*/
+footer {
+    background-color: #faf8f4;
+    text-align: center;
+    color: #f88173;
+    padding: 1rem 0; 
+    margin-top: 2%;
+    font-size: .8rem;
+}
+
+footer a {
+     color: #f88173;
+}
+

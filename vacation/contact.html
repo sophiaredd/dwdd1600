@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Budget Vacations: Home</title>
+        <link rel="stylesheet" href="budgetvacation.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Vacations on a Budget">
+        <meta charset="UTF-8">
+        <meta name="author" content="Sophia Redd">
+        <link rel="stylesheet" href="https://use.typekit.net/vvg7zzp.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="100" height="63">
+            <div>
+            <h1>Budget Vacations</h1>
+            <p>Stress Free Vacation Planning</p>
+            </div>
+        </header>
+        
+        <!-- Start of the navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+        
+        <!-- Start of the main content -->
+        <main>
+        <h1>Contact Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>  
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="123-456-7890"></label>
+        <label>Email*<input type="email" name="email" required></label>   
+        </fieldset>     
+        
+            <!--different questions to ask here: 
+            Traveler Type: is it a family, elderly, single, couple, youth group, company retreat etc.
+            how many people in party?
+            Destination: where do you want to travel to?
+            Are there any accommodations needed?
+            best way to contact you?
+            budget 
+            dates of vacation? could be too hard, or how long vacation will be-->
+        <fieldset>
+        <legend>Contact Method</legend>
+            <label><input type="radio" name="method" value="email">Email</label>
+            <label><input type="radio" name="method" value="text">Text Message</label>
+            <label><input type="radio" name="method" value="call">Phone Call</label>
+        </fieldset>
+            
+            
+        <fieldset>
+            <legend>Destination</legend>
+            <label><input type="checkbox" name="france" value="chosen"> France</label>
+            <label><input type="checkbox" name="Thailand" value="chosen"> Thailand</label>
+            <label><input type="checkbox" name="Greece" value="chosen"> Greece</label>
+            <label><input type="checkbox" name="Egypt" value="chosen">Egypt</label>
+            <label><input type="checkbox" name="africa" value="chosen">Africa</label>
+            <label><input type="checkbox" name="alaska" value="chosen">Alaska</label>
+            <label><input type="checkbox" name="other" value="chosen">Other</label>    
+        </fieldset>
+            
+        <fieldset>
+            <legend>Traveling Party</legend>
+            
+            <label>How many people are in your traveling party?
+            <select name="Party Members">
+            <option value="none">Please select</option>
+                <option value="small">1-3 people </option>
+             <option value="medium">4-8 people</option>
+             <option value="large">8+ people</option>
+            </select>
+            </label>
+            
+            <label>Who is all part of your group?</label>
+            
+            <p>This is so we have an idea of who to plan and accommodate for! </p>
+            <label>
+                <input type="checkbox" name="Single" value="chosen">Single people
+            </label>
+            <label>
+                <input type="checkbox" name="family" value="chosen">Family
+            </label>
+            <label>
+                <input type="checkbox" name="kids" value="chosen">Young Children
+            </label>
+            <label>
+                <input type="checkbox" name="Elderly" value="chosen">Elderly
+            </label>
+            <label>
+                <input type="checkbox" name="youth" value="chosen">Youth Group
+            </label>
+            <label>
+                <input type="checkbox" name="company" value="chosen">Company Retreat
+            </label>
+            
+      </fieldset>
+            
+            <label> Comments
+                <textarea name="comments" placeholder="Please add anything else you would like us to know, including accomodations, questions or concerns! This will help us have a good start for our meeting!"></textarea>
+            </label>
+                 
+            
+        <input type="submit" value="Send Consultation Request">
+        </form>   
+            
+            
+            
+            
+            
+            
+        </main>
+        
+        <!-- Start of the footer -->
+        <footer>
+        <p>&copy; 2024 &bull; Sophia Redd &bull; <a href="mailto:budgetvacations@gmail.com">Email Us</a></p>
+        </footer>
+    </body>
+</html>
